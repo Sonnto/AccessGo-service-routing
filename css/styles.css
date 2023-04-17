@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400&display=swap");
 
 /* IMPORTED FONTS
 * + Roboto (Medium 500)
@@ -24,15 +24,8 @@ html {
 
 /***** NAV ******/
 
-.back-button {
-  top: 12px;
-  left: 12px;
-  background-color: #000;
-  border: 2px solid #fff;
-}
-
-.back-button,
-.profile-head {
+#back-button,
+#profile-head {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -43,7 +36,14 @@ html {
   cursor: pointer;
 }
 
-.profile-head {
+#back-button {
+  top: 12px;
+  left: 12px;
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+#profile-head {
   top: 12px;
   background-color: lightgrey;
   border: 2px solid lightgrey;
@@ -52,14 +52,14 @@ html {
   font-size: 20px;
 }
 
-/****** Service Page ******/
-.service-title,
-.routing-title {
+/****** Service Elements ******/
+#service-title,
+#routing-title {
   margin-top: 64px;
-  margin-left: 34px;
+  margin-left: 24px;
 }
 
-.service-container {
+#service-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,15 +94,17 @@ html {
   color: #000;
 }
 
-/****** Routing Page ******/
+/****** Routing Elements ******/
 
-.routing-title {
-  display: block;
+#routing-title {
+  display: none;
 }
 
-.routing-container {
-  display: block;
+#routing-container {
+  display: none;
+  text-align: center;
   filter: grayscale(100%);
+  margin: 48px 0;
 }
 
 .loading::after {
