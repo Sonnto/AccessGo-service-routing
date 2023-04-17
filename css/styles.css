@@ -14,16 +14,8 @@ html {
   color: #fff;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-}
 *,
 *::before,
 *::after {
@@ -33,44 +25,41 @@ body {
 /***** NAV ******/
 
 .back-button {
-  position: absolute;
   top: 12px;
   left: 12px;
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+.back-button,
+.profile-head {
+  position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #000;
-  border: 2px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.back-button::before {
-  content: "";
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(135deg);
-}
-
 .profile-head {
-  position: absolute;
   top: 12px;
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  color: #000;
   right: 12px;
-  width: 48px;
-  height: 48px;
+  font-size: 20px;
 }
 
 /****** Service Page ******/
-.content-title {
+.service-title,
+.routing-title {
   margin-top: 64px;
   margin-left: 34px;
 }
 
-.service-selection-container {
+.service-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,9 +77,58 @@ body {
   border-radius: 10px;
   width: 280px;
   height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-option i {
+  color: #000;
+  font-size: 36px;
+  margin-top: 24px;
 }
 
 .service-name {
   font-family: "Inter";
   color: #000;
+}
+
+/****** Routing Page ******/
+
+.routing-title {
+  display: block;
+}
+
+.routing-container {
+  display: block;
+  filter: grayscale(100%);
+}
+
+.loading::after {
+  content: "...";
+  animation: ellipsis 2.5s infinite;
+}
+
+@keyframes ellipsis {
+  25% {
+    content: "";
+  }
+  50% {
+    content: ".";
+  }
+  75% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+#footer {
+  font-size: 8px;
+  font-family: "Roboto", "Inter";
+  text-align: center;
+  color: #fff;
+  margin-top: 16px;
 }
