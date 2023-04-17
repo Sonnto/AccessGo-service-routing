@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@500&display=swap");
+
+/* IMPORTED FONTS
+* + Roboto (Medium 500)
+* + Inter (Medoum 500)
+*/
+
+/* ==================== UNIVERSAL ==================== */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #000;
+  font-family: "Roboto", "Inter", Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/***** NAV ******/
+
+.back-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-button::before {
+  content: "";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
+.profile-head {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+}
+
+/****** Service Page ******/
+.content-title {
+  margin-top: 64px;
+  margin-left: 34px;
+}
+
+.service-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.next-line {
+  display: block;
+}
+
+.service-option {
+  background-color: #fff;
+  text-align: center;
+  border: 0.5px solid #575757;
+  border-radius: 10px;
+  width: 280px;
+  height: 100px;
+}
+
+.service-name {
+  font-family: "Inter";
+  color: #000;
+}
