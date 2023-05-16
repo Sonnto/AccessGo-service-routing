@@ -12,9 +12,4 @@ Mobile rendering of AccessGo's high-fidelity mockup screens of "Service" and "Ro
 
 ## What to do?
 
-Click the buttons to select type of service and watch loading animations.
-
-# Future Developments
-- Add and improve story
-- Redesign layout of environment photos, story, and choices
-- Choose a more legible font
+Click the buttons to select type of service and watch loading animations
